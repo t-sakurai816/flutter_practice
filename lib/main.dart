@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'FLutterのサンプル'),
     );
   }
 }
@@ -29,19 +29,27 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        actions: [
+          IconButton(
+            onPressed: () {
+              //押したときの処理
+            },
+            icon: Icon(
+              Icons.add
+            ),
+          ),
+        ],
       ),
       body: Center(
-        child: Column(
-
-        ),
+        child: Column(),
       ),
     );
   }
+
+  icon(IconData settings) {}
 }
