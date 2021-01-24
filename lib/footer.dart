@@ -8,7 +8,7 @@ class Footer extends StatefulWidget {
 }
 
 class _Footer extends State {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1; //一番初めに選択されているもの
   final _bottomNavigationBarItems = <BottomNavigationBarItem>[];
   //アイコン
   final Map _footerIcons = {
@@ -49,12 +49,12 @@ class _Footer extends State {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      items: _bottomNavigationBarItems,
-      currentIndex: _selectedIndex,
-      onTap: _onItemTapped,
-      selectedItemColor: Colors.pinkAccent,
-      unselectedItemColor: Colors.black45,
+      type: BottomNavigationBarType.fixed, //幅固定
+      items: _bottomNavigationBarItems, //アイコンの名前
+      currentIndex: _selectedIndex, //一番初めに選択されているもの
+      onTap: _onItemTapped, //タップしたら実行される
+      selectedItemColor: Colors.pinkAccent, //選択したときの色
+      unselectedItemColor: Colors.black45, //選択してないときの色
     );
   }
 }
