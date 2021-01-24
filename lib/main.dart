@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'header.dart';
-import 'footer.dart';
+import 'footer/footer.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: Header(), //header.dartを実行
         body: Container(),
-        bottomNavigationBar: Footer(), //footer.dartを実行
+        bottomNavigationBar: RootWidget(), //footer.dartを実行
       ),
     );
   }
