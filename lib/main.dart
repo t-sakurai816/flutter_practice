@@ -10,10 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Flutterの練習', //アプリの名前
+      theme: ThemeData(
+        primaryColor: Colors.green,
+      ),
       home: Scaffold(
-        appBar: Header(),
+        appBar: Header(), //header.dartを実行
         body: Container(),
-        bottomNavigationBar: Footer(),
+        bottomNavigationBar: Footer(), //footer.dartを実行
       ),
     );
   }
