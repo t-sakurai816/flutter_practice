@@ -33,15 +33,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(Icons.menu), //左側
         title: Text(widget.title),
         actions: [
           IconButton(
+            icon: Icon(Icons.add),
             onPressed: () {
               //押したときの処理
             },
-            icon: Icon(
-              Icons.add
-            ),
           ),
         ],
       ),
@@ -50,6 +49,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-
-  icon(IconData settings) {}
 }
